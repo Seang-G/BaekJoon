@@ -1,13 +1,20 @@
 # 터렛
 
+from math import sqrt
+
 T = int(input())
 
 for _ in range(T):
-    x1, y1, r1, x2, y2, r2 = map(int, input().split())
-    ab = abs(x1-x2)**2 + abs(y1-y2)**2
-    if ab == 0:
-        
-    c = (r1+r2)**2
-    if ab>c: print(0)
-    elif ab==c: print(1)
-    else: print(2)
+    x1, y1, r1, x2, y2, r2 = map(float, input().split())
+    d = sqrt((x1-x2)**2 + (y1-y2)**2)
+    r = r1 + r2
+    
+    if d > r: print(0)
+    elif d == r: print(1)
+    else:
+        r = abs(r1-r2)
+        if d == r: 
+            if d == 0: print(-1)
+            else: print(1)
+        elif d < r: print(0)
+        else: print(2)
