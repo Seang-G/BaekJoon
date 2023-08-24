@@ -1,3 +1,5 @@
+# 친구
+
 from collections import Counter
 
 N = int(input())

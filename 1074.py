@@ -1,3 +1,5 @@
+# Z
+
 # Quadrant => qdr (사분면)
 def calc_qdr(n, row, col):
   qdr_table = {

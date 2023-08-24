@@ -1,4 +1,4 @@
-from math import floor
+# 게임
 
 X, Y = map(int, input().split())
 

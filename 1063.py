@@ -1,3 +1,5 @@
+# 킹
+
 king_pos, dol_pos, N = input().split()
 
 def check_is_out(col, row):
