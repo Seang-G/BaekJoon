@@ -10,6 +10,7 @@ for _ in range(T):
   q1 = []
   q2 = []
   dic = defaultdict(int)
+  
   IDcnt = 0
   for __ in range(k):
     oper, v = stdin.readline().strip().split()
